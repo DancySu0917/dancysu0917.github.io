@@ -3,7 +3,8 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "deploy": "bash scripts/deploy.sh"
+    "main": "bash scripts/main.sh",
+    "pages": "bash scripts/pages.sh"
   },
   "devDependencies": {
     "vitepress": "^2.0.0-alpha.12"

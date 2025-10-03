@@ -47,13 +47,13 @@ export default defineConfig({
 	srcExclude: ["**/README.md"],
 
 	// 项目的构建输出位置
-	outDir: "../dist",
+  	outDir: "./.vitepress/dist",
 
 	// 指定放置生成的静态资源的目录。该路径应位于 outDir 内，并相对于它进行解析。
 	assetsDir: "assets",
 
 	// 缓存文件的目录，相对于项目根目录。
-	cacheDir: "./.vitepress/cache",
+  	cacheDir: "./.vitepress/cache",
 
 	// VitePress 不会因为死链而导致构建失败
 	ignoreDeadLinks: true,
