@@ -1,16 +1,9 @@
 # request
 
-```js
-import {
-    getStorage,
-    clearStorage
-} from './storage.js';
-import {
-    toast,
-    modal
-} from './extendApi.js';
 
-class WxRequest {
+::: code-group
+```js [request]
+export default class WxRequest {
 
     // 定义实例属性
     defaults = {
@@ -164,6 +157,17 @@ class WxRequest {
         }, config))
     }
 }
+```
+```js [http]
+import WxRequest from './request'
+import {
+    getStorage,
+    clearStorage
+} from './storage.js';
+import {
+    toast,
+    modal
+} from './extendApi.js';
 
 const instance = new WxRequest({
     baseUrl: 'https://dog.ceo',
@@ -222,3 +226,12 @@ instance.interceptors.response = async (response) => {
 
 export default instance
 ```
+
+```js [api]
+import http from '../utils/http'
+
+export default function getDogImage() {
+    return http.get('/api/breeds/image/random')
+}
+```
+:::

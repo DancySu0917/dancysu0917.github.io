@@ -8,8 +8,8 @@ export default [
         link: "/guide/mini-app/项目初始化",
       },
       {
-        text: "登录",
-        link: "/guide/mini-app/登录",
+        text: "环境变量",
+        link: "/guide/mini-app/环境变量",
       },
     ],
   },
@@ -47,7 +47,57 @@ export default [
         text: "request",
         link: "/guide/mini-app/request",
       },
-    ]
+    ],
+  },
+  {
+    text: "云函数",
+    collapsed: false,
+    items: [
+      {
+        text: "accountLogin",
+        link: "/guide/mini-app/accountLogin",
+      },
+      {
+        text: "wechatLogin",
+        link: "/guide/mini-app/wechatLogin",
+      },
+      {
+        text: "decriptPassword",
+        link: "/guide/mini-app/decriptPassword",
+      },
+      {
+        text: "encryptPassword",
+        link: "/guide/mini-app/encryptPassword",
+      },
+      {
+        text: "generateToken",
+        link: "/guide/mini-app/generateToken",
+      },
+      {
+        text: "verifyToken",
+        link: "/guide/mini-app/verifyToken",
+      },
+      {
+        text: "ensureCollection",
+        link: "/guide/mini-app/ensureCollection",
+      },
+      {
+        text: "getResources",
+        link: "/guide/mini-app/getResources",
+      },
+      {
+        text: "deleteResource",
+        link: "/guide/mini-app/deleteResource",
+      },
+      {
+        text: "getTempFileURL",
+        link: "/guide/mini-app/getTempFileURL",
+      },
+      {
+        text: "uploadFile",
+        link: "/guide/mini-app/uploadFile",
+      },
+    ],
   },
   {
     text: "硬件能力",
