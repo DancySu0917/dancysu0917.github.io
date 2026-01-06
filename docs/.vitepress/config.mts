@@ -69,6 +69,21 @@ export default defineConfig({
 		lineNumbers: true,
 	},
 
+	// Vite配置
+	vite: {
+		build: {
+			chunkSizeWarningLimit: 2000, // 增加chunk大小警告限制到2000KB
+			rollupOptions: {
+				output: {
+					manualChunks: {
+						// 将公共代码分离
+						vendor: ['vitepress']
+					}
+				}
+			}
+		}
+	},
+
 	// 主题相关配置
 	themeConfig: {
 		// 导航栏上显示的 Logo，位于站点标题前。
