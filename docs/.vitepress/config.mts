@@ -72,12 +72,41 @@ export default defineConfig({
 	// Vite配置
 	vite: {
 		build: {
-			chunkSizeWarningLimit: 2000, // 增加chunk大小警告限制到2000KB
+			chunkSizeWarningLimit: 4000, // 增加chunk大小警告限制
 			rollupOptions: {
 				output: {
-					manualChunks: {
-						// 将公共代码分离
-						vendor: ['vitepress']
+					// 使用函数形式进行更细粒度的chunk分割，避免循环依赖
+					manualChunks(id) {
+						if (id.includes('node_modules')) {
+							// 将不同类型的依赖打包到不同的chunk中
+							if (id.includes('vitepress')) {
+								return 'vitepress';
+							}
+							if (id.includes('vue')) {
+								return 'vue';
+							}
+							if (id.includes('@algolia') || id.includes('docsearch')) {
+								return 'algolia';
+							}
+							if (id.includes('shiki') || id.includes('highlight.js')) {
+								return 'highlight';
+							}
+							if (id.includes('markdown-it') || id.includes('remark')) {
+								return 'markdown';
+							}
+							// 将其他node_modules打包到vendor中
+							return 'vendor';
+						}
+						// 按目录结构分割文档内容
+						if (id.includes('/guide/')) {
+							const parts = id.split('/guide/');
+							if (parts.length > 1) {
+								const section = parts[1].split('/')[0];
+								if (section) {
+									return `guide-${section}`;
+								}
+							}
+						}
 					}
 				}
 			}

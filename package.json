@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 vitepress build docs",
     "preview": "vitepress preview docs",
     "main": "bash scripts/main.sh",
     "pages": "bash scripts/pages.sh"
