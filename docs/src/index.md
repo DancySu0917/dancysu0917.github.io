@@ -37,14 +37,14 @@ footer: true
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     315deg,
-    #3b71f2 25%,
-    #90c3f8
+    #ffc667 25%,
+    #f8cb8f
   );
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #3b71f2 50%,
-    #90c3f8 50%
+    #ffc667 50%,
+    #f8cb8f 50%
   );
   --vp-home-hero-image-filter: blur(40px);
   /* 1.0.0-beta.7 及以前版本配色方案 */
@@ -58,6 +58,17 @@ footer: true
   --vp-c-brand-dimm-1: var(--vp-c-green-dimm-1);
   --vp-c-brand-dimm-2: var(--vp-c-green-dimm-2);
   --vp-c-brand-dimm-3: var(--vp-c-green-dimm-3);
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink:hover {
+    color: #ffc667 !important;
+}
+
+.VPButton.brand[data-v-18acdbb2] {
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-brand-text);
+    background-color: #ffc667 !important;
 }
 
 @media (min-width: 640px) {

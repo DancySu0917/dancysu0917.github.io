@@ -9,7 +9,7 @@ import { sidebar } from "./sidebar.mts"
 
 export default defineConfig({
 	// 站点的标题
-	title: "Learn Doc",
+	title: "面试喵",
 
 	// 标题后缀
 	titleTemplate: "博客",
@@ -78,7 +78,7 @@ export default defineConfig({
 		},
 
 		// 站点标题，当设置为 false 时，导航中的标题将被禁用。
-		siteTitle: "Learn Doc",
+		siteTitle: "面试喵",
 
 		// 导航菜单项的配置。
 		nav,
@@ -104,7 +104,7 @@ export default defineConfig({
 		footer: {
 			message: "",
 			copyright:
-				'©2025 Learn Doc 版权所有',
+				'©2026 面试喵 版权所有',
 		},
 
 		// 编辑链接。
