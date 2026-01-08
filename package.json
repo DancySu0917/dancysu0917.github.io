@@ -7,7 +7,9 @@
     "check": "biome check --write",
     "dev": "rspress dev",
     "format": "biome format --write",
-    "preview": "rspress preview"
+    "preview": "rspress preview",
+    "push:main": "bash scripts/push-main.sh",
+    "deploy:pages": "bash scripts/deploy-pages.sh"
   },
   "dependencies": {
     "rspress": "^1.40.2"
