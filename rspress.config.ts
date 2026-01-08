@@ -3,19 +3,21 @@ import { defineConfig } from 'rspress/config';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'My Site',
-  icon: '/rspress-icon.png',
+  title: '面试喵',
+  description: '前端面试题库 - 帮助你系统地准备前端面试',
+  icon: '/logo.svg',
   logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
+    light: '/logo.svg',
+    dark: '/logo.svg',
   },
   themeConfig: {
     socialLinks: [
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/web-infra-dev/rspress',
+        content: 'https://github.com',
       },
     ],
   },
+  globalStyles: path.join(__dirname, 'docs/index.css'),
 });

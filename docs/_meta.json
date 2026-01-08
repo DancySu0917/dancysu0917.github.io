@@ -1,16 +1,62 @@
 [
   {
-    "text": "Guide",
-    "link": "/guide/",
-    "activeMatch": "/guide/"
+    "text": "HTML",
+    "link": "/html/",
+    "activeMatch": "/html/"
   },
   {
-    "text": "Hello world",
-    "link": "/hello/",
-    "activeMatch": "/hello/"
+    "text": "CSS",
+    "link": "/css/",
+    "activeMatch": "/css/"
   },
   {
-    "text": "API",
-    "link": "https://rspress.dev/api/index.html"
+    "text": "JavaScript",
+    "link": "/javascript/",
+    "activeMatch": "/javascript/"
+  },
+  {
+    "text": "TypeScript",
+    "link": "/typescript/",
+    "activeMatch": "/typescript/"
+  },
+  {
+    "text": "React",
+    "link": "/react/",
+    "activeMatch": "/react/"
+  },
+  {
+    "text": "Vue",
+    "link": "/vue/",
+    "activeMatch": "/vue/"
+  },
+  {
+    "text": "Node.js",
+    "link": "/node/",
+    "activeMatch": "/node/"
+  },
+  {
+    "text": "工程化",
+    "link": "/engineering/",
+    "activeMatch": "/engineering/"
+  },
+  {
+    "text": "浏览器",
+    "link": "/browser/",
+    "activeMatch": "/browser/"
+  },
+  {
+    "text": "网络",
+    "link": "/network/",
+    "activeMatch": "/network/"
+  },
+  {
+    "text": "算法",
+    "link": "/algorithm/",
+    "activeMatch": "/algorithm/"
+  },
+  {
+    "text": "手写代码",
+    "link": "/coding/",
+    "activeMatch": "/coding/"
   }
 ]

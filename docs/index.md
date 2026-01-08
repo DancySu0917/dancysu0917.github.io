@@ -2,36 +2,36 @@
 pageType: home
 
 hero:
-  name: My Site
-  text: A cool website!
-  tagline: This is the tagline
+  name: 面试喵
+  text: 前端面试题库
+  tagline: 系统梳理前端知识体系，帮助你高效准备面试
   actions:
     - theme: brand
-      text: Quick Start
+      text: 开始学习
       link: /guide/
     - theme: alt
-      text: GitHub
-      link: https://github.com/web-infra-dev/rspress
+      text: 快速导航
+      link: /guide/
   image:
-    src: /rspress-icon.png
+    src: /logo.svg
     alt: Logo
 features:
-  - title: Blazing fast build speed
-    details: The core compilation module is based on the Rust front-end toolchain, providing a more ultimate development experience.
+  - title: 完整知识体系
+    details: 从 HTML/CSS 到 JavaScript、React、Vue等框架，涵盖前端核心技术栈。
     icon: 🏃🏻‍♀️
-  - title: Support for MDX content writing
-    details: MDX is a powerful way to write content, allowing you to use React components in Markdown.
+  - title: 高频面试题
+    details: 精选来自大厂的前端面试题，附带详细解答和最佳实践。
     icon: 📦
-  - title: Built-in full-text search
-    details: Automatically generates a full-text search index for you during construction, providing out-of-the-box full-text search capabilities.
+  - title: 系统化学习
+    details: 按知识模块分类，帮助你系统地构建前端知识体系。
     icon: 🎨
-  - title: Simpler I18n solution
-    details: With the built-in I18n solution, you can easily provide multi-language support for documents or components.
+  - title: 快速查阅
+    details: 内置全文搜索功能，快速找到你需要的知识点。
     icon: 🌍
-  - title: Static site generation
-    details: In production, it automatically builds into static HTML files, which can be easily deployed anywhere.
+  - title: 深度理解
+    details: 每个知识点都有深度分析和代码示例，助你理解本质。
     icon: 🌈
-  - title: Providing multiple custom capabilities
-    details: Through its extension mechanism, you can easily extend theme UI and build process.
+  - title: 持续更新
+    details: 定期更新最新的技术趋势和面试题目。
     icon: 🔥
 ---
